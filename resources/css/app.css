@@ -1,15 +1,18 @@
+/* LAYOUT */
 html {
     font-family: sans-serif;
 }
 
-body{
+body {
     margin: 0;
+    background-color: rgb(133, 133, 133);
 }
 
 h1 {
-    color: red;
+    color: rgb(49, 49, 49);
     text-decoration: underline;
-    margin: 10px;
+    margin: 20px;
+    text-align: center;
 }
 
 .menu {
@@ -21,36 +24,83 @@ h1 {
 
 .menu li a {
     color: #fff;
+    font-weight: bold;
     display: block;
     text-decoration: none;
     padding: 0.5em 1em;
 }
 
-.contenido{
+.contenido {
     margin: auto;
     max-width: 1080px;
 }
 
-/* ul {
+/* HOME - no me funciona */
+
+/* .home {
+    background-image: url("../img/home.png");
+    object-fit: center;
+    background-size: cover;
+} */
+
+.grid-home {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1em;
 }
 
-li {
-    list-style: none;
-    margin: auto;
-    border: 1px solid black;
-    padding: 2px;
+.grid-home p {
+    padding: 1em;
+    border: 1px solid grey;
 }
 
-p {
-    margin: 10px;
-    align-content: center;
-} */
+span{
+    font-weight: bold;
+}
 
-@media screen and (min-width: 520px){
-    .menu{
+/* ABOUT */
+
+.icons{
+display: flex;
+}
+
+.bi{
+    margin-right: 20px;
+    font-size: xx-large;
+}
+
+/* CONTACTO */
+
+.form-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px;
+    background: #ffffff;
+    border: 10px solid #f2f2f2;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: auto;
+}
+
+/* BLOG */
+
+.blog{
+    column-count: 2;
+}
+
+/* FOOTER */
+
+h5{text-align: center;}
+
+@media screen and (min-width: 520px) {
+    .menu {
         display: flex;
+        color: red;
     }
 }
